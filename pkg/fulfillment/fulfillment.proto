@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service Fulfillment {
+    rpc SayHello (Request) returns (Response) {}
+}
+
+message Request {
+    string question = 1;
+}
+
+message Response {
+    string reply = 1;
+}
